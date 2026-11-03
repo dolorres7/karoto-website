@@ -122,7 +122,7 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Hero ---------- */
 
 .hero {
-  padding-top: 78px;
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,7 +143,7 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   width: min(557px, calc(100% - 32px));
   aspect-ratio: 557 / 510.92;
-  margin-top: 71px;
+  margin-top: 48px;
 }
 .hero-frames .phone { position: absolute; }
 .hero-right { left: 61.939%; top: 6.655%; width: 38.061%; height: 90.213%; }
@@ -155,9 +155,9 @@ a { color: inherit; text-decoration: none; }
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin-top: 80px;
+  margin-top: 48px;
 }
-.download-left { align-items: flex-start; margin-top: 0; }
+.download.download-left { align-items: flex-start; margin-top: 0; }
 
 .app-store-badge img { width: 119.664px; height: 40px; }
 
@@ -173,6 +173,9 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
   object-fit: cover;
 }
+/* The screen's own rounded corners, so none pokes past the frame when large. */
+.phone .screen { border-radius: 14% / 6.44%; }
+
 .phone .bezel,
 .device-iphone .bezel {
   position: absolute;
@@ -241,7 +244,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .feature-text h3 { font-size: 20px; font-weight: 700; }
 .feature-text p { font-weight: 500; color: var(--secondary); }
@@ -256,6 +259,9 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   height: 480px;
   overflow: hidden;
+  /* Clipped, never scrolled: focusing a phone that runs past the edge would
+     otherwise scroll the card to it, and leave it there. */
+  overflow: clip;
 }
 .shot > .phone,
 .shot > .widget {
@@ -310,6 +316,105 @@ a { color: inherit; text-decoration: none; }
   transform: rotate(5deg);
 }
 .widget-2 img { width: 248.08%; height: 539.77%; left: -17.11%; top: -49.46%; }
+
+/* ---------- Screenshots that open large ---------- */
+
+[data-zoom] {
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+/* Lifted a little on hover, on top of each one's own placing. */
+.shot > .phone[data-zoom]:hover { transform: translate(-50%, calc(-50% - 6px)); }
+.widget-1[data-zoom]:hover { transform: rotate(-4deg) translateY(-6px); }
+.widget-2[data-zoom]:hover { transform: rotate(5deg) translateY(-6px); }
+[data-zoom]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 6px;
+  border-radius: 28px;
+}
+
+.lightbox-open { overflow: hidden; }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 24px;
+  background: rgba(11, 9, 10, 0.72);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.lightbox.is-visible { opacity: 1; }
+
+.lightbox-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transform: scale(0.96);
+  transition: transform 0.25s ease;
+}
+.lightbox.is-visible .lightbox-figure { transform: none; }
+
+/* The screenshot at its own 1290 × 2796, as tall as the window allows. */
+.lightbox-phone {
+  height: min(calc(100vh - 140px), 820px);
+  height: min(calc(100dvh - 140px), 820px);
+  aspect-ratio: 190 / 413.085;
+}
+
+.lightbox-caption {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.lightbox-button {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.lightbox-button:hover { background: rgba(255, 255, 255, 0.28); }
+.lightbox-button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 640px) {
+  .lightbox { gap: 8px; padding: 16px 8px; }
+  .lightbox-prev,
+  .lightbox-next { width: 40px; height: 40px; }
+  .lightbox-phone {
+    height: auto;
+    width: min(calc(100vw - 120px), calc((100dvh - 160px) * 0.46));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-zoom],
+  .lightbox,
+  .lightbox-figure { transition: none; }
+}
 
 /* ---------- And more ---------- */
 
@@ -506,7 +611,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--secondary);
 }
@@ -520,7 +625,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
   gap: 16px;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--secondary);
 }
 
@@ -767,13 +872,22 @@ a { color: inherit; text-decoration: none; }
 
   .cta { height: auto; }
   .cta-inner { height: auto; padding-top: 64px; }
-  .cta-text { position: static; transform: none; width: auto; }
+  .cta-text {
+    position: static;
+    transform: none;
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .download.download-left { align-items: center; }
   .cta-phone {
     position: relative;
     left: auto;
     top: auto;
-    height: 380px;
-    margin-top: 48px;
+    height: 400px;
+    margin-top: 40px;
+    /* Room above for the frame, which stands a little proud of the screen. */
+    padding-top: 20px;
     overflow: hidden;
   }
   .cta-phone .phone { width: 260px; height: 565.3px; margin-inline: auto; }
@@ -784,14 +898,14 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 640px) {
   .header-nav a:not(.button) { display: none; }
-  .hero,
+  .hero { padding-top: 32px; }
   .legal,
   .help { padding-top: 48px; }
   .chips { gap: 10px; }
   .help-contact p { font-size: 18px; }
   .legal-sections h2 { font-size: 24px; }
-  .hero-frames { margin-top: 48px; }
-  .download { margin-top: 48px; }
+  .hero-frames { margin-top: 32px; }
+  .download { margin-top: 32px; }
   .eyebrow { font-size: 20px; }
   .lead,
   .feature-text,
