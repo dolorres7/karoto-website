@@ -865,7 +865,11 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 900px) {
   .grid-3,
   .grid-2 { grid-template-columns: 1fr; }
+  /* Stacked, each card sits close to its own text and apart from the next. */
+  .grid-3,
+  .grid-2 { row-gap: 64px; }
   .grid-more { row-gap: 48px; }
+  .feature { gap: 16px; }
   .sections,
   .section-stack { gap: 96px; }
   .stack-156 { gap: 96px; }
