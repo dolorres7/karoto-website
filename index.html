@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karoto — Recipes, laid out as you cook</title>
+  <meta name="description" content="Karoto turns your recipes into a clear, step-by-step tree, so you always know what to do next. A free cookbook, meal planner and grocery list for iPhone, iPad and Mac.">
+  <link rel="icon" type="image/png" href="assets/karoto-icon.png">
+  <link rel="apple-touch-icon" href="assets/karoto-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Karoto home">
+        <img src="assets/karoto-icon.png" alt="" width="32" height="32">
+        <span>Karoto</span>
+      </a>
+      <nav class="header-nav" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="help.html">Help Center</a>
+        <a href="mailto:hello.karoto@gmail.com">Contact</a>
+        <a class="button" href="#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-text">
+        <h1 class="display">Recipes, laid out as you cook.</h1>
+        <p class="lead hero-lead">Karoto turns your recipes into a clear, step-by-step tree. Every ingredient sits next to the step that uses it, so there’s nothing to hunt for halfway through.</p>
+      </div>
+
+      <div class="hero-frames" aria-hidden="true">
+        <div class="phone hero-right"><img class="screen" src="assets/hero-right.PNG" alt=""><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+        <div class="phone hero-left"><img class="screen" src="assets/hero-left.PNG" alt=""><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+        <div class="phone hero-middle"><img class="screen" src="assets/hero-middle.png" alt=""><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+      </div>
+
+      <div class="download">
+        <!-- TODO: App Store link -->
+        <a class="app-store-badge" href="#" aria-label="Download on the App Store">
+          <img src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="" width="120" height="40">
+        </a>
+        <p class="caption">Available on iOS, iPadOS &amp; macOS</p>
+      </div>
+    </section>
+
+    <div class="sections">
+      <div class="container section-stack">
+
+        <!-- Recipe tree -->
+        <section class="feature-section" id="features">
+          <header class="section-head">
+            <p class="eyebrow">Recipe tree</p>
+            <h2 class="title">Less reading, more cooking.</h2>
+            <p class="lead">A recipe you can understand at a glance, and follow without scrolling back.</p>
+          </header>
+          <div class="grid grid-3">
+            <article class="feature">
+              <div class="card shot">
+                <div class="phone phone-card"><img class="screen" src="assets/recipe-tree-1.png" alt="A recipe tree in Karoto"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>Know what goes where.</h3>
+                <p>Ingredients flow into steps, and steps into the finished dish, so the whole recipe makes sense before you start.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <div class="card shot">
+                <div class="phone phone-card"><img class="screen" src="assets/recipe-tree-2.PNG" alt="A recipe in sections"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>Big recipes, in small pieces.</h3>
+                <p>Dough and icing, cake and frosting, each with its own ingredients and steps, so a long recipe stays easy to follow.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <div class="card shot">
+                <div class="phone phone-card"><img class="screen" src="assets/recipe-tree-3.PNG" alt="Writing a recipe in Karoto"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>A home for recipes you invent.</h3>
+                <p>Karoto is ideal for anyone who loves creating recipes. Family favorites, experiments and your Sunday staple get the same clear tree as any imported recipe, ready to cook, scale and share.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Add recipes -->
+        <section class="feature-section">
+          <header class="section-head">
+            <p class="eyebrow">Add recipes</p>
+            <h2 class="title">Your recipes, brought in.</h2>
+            <p class="lead">A link, pasted text, a screenshot or a recipe of your own, and Karoto turns it into one you can follow.</p>
+          </header>
+          <div class="grid grid-2">
+            <article class="feature">
+              <div class="card shot shot-square">
+                <div class="phone phone-large phone-show-bottom"><img class="screen" src="assets/add-recipes.PNG" alt="Adding a recipe from a link, text or screenshot"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>A recipe from wherever it lives.</h3>
+                <p>Add recipes from a website link, pasted text or a screenshot of a post or page, or write your own. Each one opens ready to check before it’s saved, and sharing from Safari brings a recipe in with one tap.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <div class="card shot shot-square">
+                <div class="phone phone-large phone-show-top"><img class="screen" src="assets/apple-intelligence.PNG" alt="Apple Intelligence grouping ingredients into steps"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>Sorted into steps for you.</h3>
+                <p>On supported devices, Apple Intelligence works out which ingredients belong to which step, so a flat list becomes a tree. Without it, Karoto matches each ingredient to the step that names it.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Cooking mode -->
+        <section class="feature-section">
+          <header class="section-head">
+            <p class="eyebrow">Cooking mode</p>
+            <h2 class="title">One step at a time.<br>Hands-free if you like.</h2>
+            <p class="lead">Just what to do now, and only the ingredients it needs.</p>
+          </header>
+          <div class="grid grid-3">
+            <article class="feature">
+              <div class="card shot">
+                <div class="phone phone-card phone-cook"><img class="screen" src="assets/cook-mode-1.PNG" alt="Cook Mode showing one step"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>Only what this step needs.</h3>
+                <p>One step at a time, with just the ingredients it uses, and a screen that stays on while you cook.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <div class="card shot">
+                <div class="phone phone-card phone-cook"><img class="screen" src="assets/cook-mode-2.PNG" alt="Hands-free Cook Mode"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>Messy hands? No problem.</h3>
+                <p>Use a hand or your eyes to move between steps, so flour, butter and sticky fingers stay off your phone.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <div class="card shot">
+                <div class="phone phone-live live-1"><img class="screen" src="assets/live-activity-1.PNG" alt="A cooking timer in the Dynamic Island"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+                <div class="phone phone-live live-2"><img class="screen" src="assets/live-activity-2.PNG" alt="A cooking step on the Lock Screen"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>Live Activities.</h3>
+                <p>The current step and its timer stay on your Lock Screen and in the Dynamic Island, so you can leave the app and still know what’s next.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Meal plan -->
+        <section class="feature-section">
+          <header class="section-head">
+            <p class="eyebrow">Meal plan</p>
+            <h2 class="title">Plan the week.</h2>
+            <p class="lead">Breakfast, Lunch and Dinner each keep their own time, and Karoto sends a reminder when it’s time to start cooking, so the meal is ready when you planned.</p>
+          </header>
+          <div class="grid grid-3">
+            <article class="feature">
+              <div class="card shot">
+                <div class="phone phone-card"><img class="screen" src="assets/meal-plan-1.PNG" alt="The week's Meal Plan"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>A week that adjusts to you.</h3>
+                <p>Drop recipes into sections, move them around as plans change, leave notes, and mark meals as cooked so you can see what you made.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <div class="card shot">
+                <div class="phone phone-card"><img class="screen" src="assets/meal-plan-2.PNG" alt="Meals without a recipe in the Meal Plan"><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+              </div>
+              <div class="feature-text">
+                <h3>Room for the real week.</h3>
+                <p>Plan a bowl of cereal, leftovers or a night out, and keep the recipes for the meals that need them.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <div class="card shot">
+                <div class="widget widget-1"><img src="assets/widget-1.png" alt="The Meal Plan widget"></div>
+                <div class="widget widget-2"><img src="assets/widget-2.png" alt="The Meal Plan widget after a meal is cooked"></div>
+              </div>
+              <div class="feature-text">
+                <h3>Home Screen widget.</h3>
+                <p>Today’s meals kept on your Home Screen. It updates as you cook, and a finished meal steps aside for the next one.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- And more -->
+        <section class="feature-section">
+          <header class="section-head section-head-wide">
+            <p class="eyebrow">And more</p>
+            <h2 class="title">The small things that help.</h2>
+            <p class="lead lead-narrow">Breakfast, lunch and dinner, each with its own time. A notification when it’s time to start cooking, and a grocery list that fills itself.</p>
+          </header>
+          <div class="grid grid-3 grid-more">
+            <article class="mini">
+              <span class="badge-icon" style="--tint:#FF9230"><i class="ph-fill ph-magnifying-glass"></i></span>
+              <div class="feature-text">
+                <h3>Search by ingredients</h3>
+                <p>Name a few ingredients, say eggs and milk, and Karoto lists the recipes that use both, or the closest matches when none does.</p>
+              </div>
+            </article>
+            <article class="mini">
+              <span class="badge-icon" style="--tint:#30D158"><i class="ph-fill ph-basket"></i></span>
+              <div class="feature-text">
+                <h3>Groceries</h3>
+                <p>Ingredients from your recipes and meal plan are added up, grouped by aisle in one Reminders list, and ready on all your Apple devices.</p>
+              </div>
+            </article>
+            <article class="mini">
+              <span class="badge-icon" style="--tint:#FF375F"><i class="ph-fill ph-scales"></i></span>
+              <div class="feature-text">
+                <h3>Conversions</h3>
+                <p>Switch between metric and US units, choose from the different cup sizes, and look up common weights in the built-in tables.</p>
+              </div>
+            </article>
+            <article class="mini">
+              <span class="badge-icon" style="--tint:#00D2E0"><i class="ph-fill ph-users-three"></i></span>
+              <div class="feature-text">
+                <h3>Household</h3>
+                <p>Up to 5 people can share recipes, folders and meal plan, and each of them can add and edit, so dinner gets planned together.</p>
+              </div>
+            </article>
+            <article class="mini">
+              <span class="badge-icon" style="--tint:#DB34F2"><i class="ph-fill ph-file-dashed"></i></span>
+              <div class="feature-text">
+                <h3>Drafts</h3>
+                <p>Unfinished recipes are kept safe in Drafts, ready when you are, and they stay out of your meal plan and grocery list until they’re done.</p>
+              </div>
+            </article>
+            <article class="mini">
+              <span class="badge-icon" style="--tint:#6D7CFF"><i class="ph-fill ph-export"></i></span>
+              <div class="feature-text">
+                <h3>Sharing and Export</h3>
+                <p>A single recipe is easy to pass on as text or a link, and the whole cookbook comes with you as a .zip, whenever you want it.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="stack-156">
+          <!-- Wherever you cook -->
+          <section class="feature-section devices-section">
+            <header class="section-head section-head-wide">
+              <p class="eyebrow">Wherever you cook</p>
+              <h2 class="title">One cookbook, every device.</h2>
+              <p class="lead lead-devices">Cook from your iPhone, edit recipes on your iPad, and plan your week on your Mac. Every device does it all, and everything stays in step through iCloud.</p>
+            </header>
+            <div class="devices" aria-hidden="true">
+              <div class="device-ipad">
+                <img class="screen" src="assets/ipad.PNG" alt="">
+                <img class="bezel" src="assets/ipad-bezel.png" alt="">
+              </div>
+              <div class="device-mac">
+                <img class="screen" src="assets/mac.png" alt="">
+                <img class="bezel" src="assets/mac-bezel.png" alt="">
+              </div>
+              <div class="device-iphone">
+                <img class="screen" src="assets/iphone.PNG" alt="">
+                <img class="bezel" src="assets/iphone-bezel.png" alt="">
+              </div>
+            </div>
+          </section>
+
+          <!-- Free, private, and yours -->
+          <section class="feature-section">
+            <header class="section-head">
+              <p class="eyebrow">An app with no strings</p>
+              <h2 class="title">Free, private, and yours.</h2>
+            </header>
+            <div class="privacy">
+              <div class="grid grid-3">
+                <article class="card promise">
+                  <i class="ph-fill ph-carrot promise-icon"></i>
+                  <div class="feature-text">
+                    <h3>Free, completely.</h3>
+                    <p>No purchases, no subscriptions and nothing locked. Every feature is there from the first launch.</p>
+                  </div>
+                </article>
+                <article class="card promise">
+                  <i class="ph-fill ph-shield-check promise-icon"></i>
+                  <div class="feature-text">
+                    <h3>Private by design.</h3>
+                    <p>No account, no ads and no tracking. Karoto has no servers, your data lives on your device, and screenshots are read there too.</p>
+                  </div>
+                </article>
+                <article class="card promise">
+                  <i class="ph-fill ph-cloud-arrow-up promise-icon"></i>
+                  <div class="feature-text">
+                    <h3>Synced with your iCloud.</h3>
+                    <p>With iCloud sync on, recipes, photos and meal plans stay in step across your devices, stored in your iCloud and nowhere else.</p>
+                  </div>
+                </article>
+              </div>
+              <p class="footnote">Recipes are sorted into steps with Apple Intelligence on supported devices, either on your device or through Apple’s Private Cloud Compute. <a href="https://support.apple.com/en-us/121115?cid=general-apple-intelligence-b3d8fc66-62028090" target="_blank" rel="noopener">Learn more...</a></p>
+            </div>
+          </section>
+        </div>
+
+        <!-- FAQ -->
+        <section class="feature-section faq-section" id="faq">
+          <header class="section-head section-head-wide">
+            <p class="eyebrow">FAQ</p>
+            <h2 class="title">Questions and answers.</h2>
+          </header>
+          <div class="faq">
+            <details class="faq-item" open>
+              <summary>
+                <span>Do I need an account?</span>
+                <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+                <i class="ph ph-x faq-open" aria-hidden="true"></i>
+              </summary>
+              <p>No. Karoto works without an account. Everything is stored on your device, and sync across your devices is optional, through your own iCloud.</p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span>Is Karoto free to use?</span>
+                <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+                <i class="ph ph-x faq-open" aria-hidden="true"></i>
+              </summary>
+              <p>Yes, completely. There are no purchases, no subscriptions and nothing locked. Every feature is there from the first launch.</p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span>Does Karoto work offline?</span>
+                <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+                <i class="ph ph-x faq-open" aria-hidden="true"></i>
+              </summary>
+              <p>Yes. Your recipes, Meal Plan and Cook Mode all work without a connection. Adding a recipe from a link needs the internet, and iCloud sync catches up when you’re back online.</p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span>Where are my recipes stored?</span>
+                <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+                <i class="ph ph-x faq-open" aria-hidden="true"></i>
+              </summary>
+              <p>On your device. With iCloud sync on, they’re also kept in your own iCloud, so they stay in step across your devices. Karoto has no servers of its own.</p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span>Which devices and languages are supported?</span>
+                <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+                <i class="ph ph-x faq-open" aria-hidden="true"></i>
+              </summary>
+              <p>iPhone, iPad and Mac, with iOS 26, iPadOS 26 or macOS 26 and later. Karoto speaks English and Russian.</p>
+            </details>
+          </div>
+          <a class="more-link" href="help.html">Learn more about Karoto in Help Center <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        </section>
+
+      </div>
+
+      <!-- Download -->
+      <section class="cta" id="download">
+        <div class="container cta-inner">
+          <div class="cta-text">
+            <header class="section-head">
+              <p class="eyebrow">Free download</p>
+              <h2 class="title">Cook with Karoto</h2>
+              <p class="lead">A cookbook, meal planner and grocery list in one app. Forever free with no payments and subscriptions, ever.</p>
+            </header>
+            <div class="download download-left">
+              <!-- TODO: App Store link -->
+              <a class="app-store-badge" href="#" aria-label="Download on the App Store">
+                <img src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="" width="120" height="40">
+              </a>
+              <p class="caption">Available on iOS, iPadOS &amp; macOS</p>
+            </div>
+          </div>
+          <div class="cta-phone" aria-hidden="true">
+            <div class="phone"><img class="screen" src="assets/hero-middle.png" alt=""><img class="bezel" src="assets/iphone-bezel.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand brand-large" href="#top" aria-label="Karoto home">
+          <img src="assets/karoto-icon.png" alt="" width="44" height="44">
+          <span>Karoto</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#download">Download</a>
+          <a href="#features">Features</a>
+          <a href="help.html">Help Center</a>
+          <a href="mailto:hello.karoto@gmail.com">Contact</a>
+        </nav>
+      </div>
+      <div class="separator"></div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Karoto App. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Legal">
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

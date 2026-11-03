@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help Center — Karoto</title>
+  <meta name="description" content="How Karoto's features work, how to use them well, and what to do when something's off.">
+  <link rel="icon" type="image/png" href="assets/karoto-icon.png">
+  <link rel="apple-touch-icon" href="assets/karoto-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Karoto home">
+        <img src="assets/karoto-icon.png" alt="" width="32" height="32">
+        <span>Karoto</span>
+      </a>
+      <nav class="header-nav" aria-label="Main">
+        <a href="index.html#features">Features</a>
+        <a href="help.html" aria-current="page">Help Center</a>
+        <a href="mailto:hello.karoto@gmail.com">Contact</a>
+        <a class="button" href="index.html#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="help">
+    <div class="help-top">
+      <div class="help-intro">
+        <h1>Help Center</h1>
+        <p>Everything you need to get the most out of Karoto. How the features work, how to use them well, and what to do when something’s off.</p>
+      </div>
+      <label class="help-search">
+        <i class="ph-bold ph-magnifying-glass" aria-hidden="true"></i>
+        <input type="search" placeholder="Search questions…" aria-label="Search questions" autocomplete="off" data-help-search>
+      </label>
+      <div class="chips" role="group" aria-label="Topics">
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="basics" aria-pressed="false">Karoto Basics</button>
+        <button class="chip" type="button" data-filter="adding" aria-pressed="false">Adding Recipes</button>
+        <button class="chip" type="button" data-filter="tree" aria-pressed="false">Recipe Tree</button>
+        <button class="chip" type="button" data-filter="cookbook" aria-pressed="false">Cookbook</button>
+        <button class="chip" type="button" data-filter="cooking" aria-pressed="false">Cooking Mode</button>
+        <button class="chip" type="button" data-filter="meal-plan" aria-pressed="false">Meal Plan &amp; Groceries</button>
+        <button class="chip" type="button" data-filter="household" aria-pressed="false">Household</button>
+        <button class="chip" type="button" data-filter="privacy" aria-pressed="false">Data &amp; Privacy</button>
+      </div>
+    </div>
+
+    <div class="help-sections">
+      <section class="help-section" id="basics" data-section="basics">
+        <h2>Karoto Basics</h2>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary>
+              <span>Do I need an account?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>No. Karoto works without an account. Everything is stored on your device, and syncing across your devices is optional, through your own iCloud.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Is Karoto free to use?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. Karoto is free, with no ads, no subscriptions and no purchases.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Does Karoto work offline?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. Importing a recipe from a website link needs a connection, and Apple Intelligence may need one too. Without it, Karoto sorts the recipe with simpler matching. Everything else works without internet.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Where are my recipes stored?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>On your device. If you’re signed in to iCloud and syncing is on, they also sync between your own devices through your private iCloud, which the developer can’t access.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Which devices and languages are supported?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Karoto is available on iPhone, iPad and Mac, with iOS 26, iPadOS 26 or macOS 26 and later. The app is available in English and Russian.</p>
+          </details>
+        </div>
+      </section>
+      <section class="help-section" id="adding" data-section="adding">
+        <h2>Adding Recipes</h2>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary>
+              <span>How can I add a recipe?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Tap the + button and choose Paste Link, Paste Text, Add Screenshots or Write from scratch.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can I add a recipe from a website link?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. Paste the link, or share the page from Safari, and Karoto reads the recipe from the page. If a page can’t be read, Karoto lets you paste the recipe text instead.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can I add recipes from TikTok or Instagram?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Karoto can’t read links from social media. Take screenshots of the post instead (open the full caption first), and add them with Add Screenshots, in order. You can add up to 6 at a time.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>What happens to my screenshots?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Karoto reads the text on your device and ignores app text such as usernames and like counts. It keeps the screenshots with the recipe so you can see the original, and syncs them through your iCloud if you use it.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Do I need to check an imported recipe?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. Every imported recipe opens for review before it’s saved, with any lines Karoto is unsure about highlighted. Until you confirm it, the recipe stays a draft.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>How does Karoto sort ingredients into steps?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>On supported devices, Apple Intelligence works out which ingredients belong to which step. Without it, Karoto matches each ingredient to the step that names it. If something lands in the wrong place, you can fix it in the editor.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can I write my own recipe?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. Choose Write from scratch, and add ingredients with a keypad made for amounts and units, then connect them to steps.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can I import from my clipboard?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>When your clipboard holds a recipe or a link, Karoto offers to import it. It reads the content only when you choose to paste.</p>
+          </details>
+        </div>
+      </section>
+      <section class="help-section" id="tree" data-section="tree">
+        <h2>Recipe Tree</h2>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary>
+              <span>What is the recipe tree?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Karoto lays out a recipe as a tree: ingredients flow into steps, and steps flow into the finished dish, so you can see what goes where before you start.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>What happens when I tap a step?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Every ingredient that feeds that step lights up.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can I change how a recipe is arranged?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. In the editor, select ingredients or steps, then tap Group or Merge to make the tree match how you cook.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>How do I handle recipes with parts, like dough and icing?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Recipes can have sections, such as dough, filling and icing, each with its own ingredients and steps.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can I scale a recipe or change units?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. Choose ½×, 2× or 3× to scale every amount, and switch between metric and US units in one tap. The Conversions tab converts amounts, such as cups to millilitres, and lists what a cup of common ingredients weighs.</p>
+          </details>
+        </div>
+      </section>
+      <section class="help-section" id="cookbook" data-section="cookbook">
+        <h2>Cookbook</h2>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary>
+              <span>How do I organize my recipes?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Use folders to group recipes (such as Baking or Soups) and tags to label them (such as Bread or One-pot).</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can I search by ingredient?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. Search finds recipe names, tags and ingredients, so you can type what’s in your fridge and see what you can cook.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>What are Drafts?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Drafts are recipes you haven’t finished or confirmed. They stay out of All Recipes, your meal plan and your grocery list until you finish them.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>What happens to recipes if I delete a folder?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Nothing. Deleting a folder never deletes its recipes, and they simply become unfiled.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can I export my recipes?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. Export your cookbook as a .zip file from the app.</p>
+          </details>
+        </div>
+      </section>
+      <section class="help-section" id="cooking" data-section="cooking">
+        <h2>Cooking Mode</h2>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary>
+              <span>How do I start cooking mode?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Open a recipe and tap the play button.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>What does cooking mode show?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>One step at a time, with only the ingredients that step uses. Tick off ingredients as you add them, and use the arrows to move between steps.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Does the screen stay on?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes, while you’re in cooking mode.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>What is hands-free?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Hands-free lets you move between steps without touching your phone. Hold up one finger and wave it right for the next step or left for the previous one, and close an open hand into a fist to start the step’s timer. On devices with Face ID, you can also wink to move between steps or open your mouth to start the timer.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Do timers keep running if I leave the app?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. On iPhone, the current step and its timer stay on your Lock Screen and in the Dynamic Island. You also get a notification when a timer finishes.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Does the camera record me?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>No. Hands-free uses the camera live to recognize a gesture, and nothing is recorded or stored.</p>
+          </details>
+        </div>
+      </section>
+      <section class="help-section" id="meal-plan" data-section="meal-plan">
+        <h2>Meal Plan &amp; Groceries</h2>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary>
+              <span>How do I plan meals?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Add recipes to the days of your week, under Breakfast, Lunch and Dinner.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can I add a meal without a recipe, or a note?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. A meal without a recipe is its own entry, and notes are separate, so you can plan “Dinner at Mum’s” or add a reminder to defrost something.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Can Karoto remind me when to start cooking?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. When to Start Cooking sends a reminder at your meal time minus the recipe’s cooking time.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Is there a widget?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Yes. The widget shows your meal plan on your Home Screen.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>How does the grocery list work?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Karoto sends ingredients to a list in Apple Reminders, grouped by aisle. You can add ingredients from a recipe or from your meal plan.</p>
+          </details>
+        </div>
+      </section>
+      <section class="help-section" id="household" data-section="household">
+        <h2>Household</h2>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary>
+              <span>What is a household?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>A household lets up to 5 people share a cookbook and a meal plan, through iCloud.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>How do I invite someone?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Send an invite from the Household settings. Each person needs Karoto and an iCloud account, and must open the invite on every device they use Karoto on.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>What’s shared and what’s private?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>The household’s recipes, folders and meal plan are shared. Your own recipes stay private until you move one into the household, and your drafts are always private.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>What happens if the sharing stops?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>If the owner stops sharing, everyone loses access to the household’s recipes, folders and meal plan. Anyone leaving a household can keep a copy of what they want first.</p>
+          </details>
+        </div>
+      </section>
+      <section class="help-section" id="privacy" data-section="privacy">
+        <h2>Data &amp; Privacy</h2>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary>
+              <span>Does Karoto collect my data?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>No. There are no accounts, no servers, no ads and no tracking.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>How does Apple Intelligence handle my recipes?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>On supported devices, recipe text may be processed on your device or by Apple’s Private Cloud Compute, which is designed so that Apple doesn’t store or see it. Read more in the <a href="privacy.html">Privacy Policy</a>.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>Why does Karoto ask for permissions?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Only when a feature needs them: Reminders for your grocery list, Notifications for timers and cooking reminders, Camera for hands-free, and Photos for importing screenshots. You can change any of them in Settings.</p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <span>How do I delete my data?</span>
+              <i class="ph ph-plus faq-closed" aria-hidden="true"></i>
+              <i class="ph ph-x faq-open" aria-hidden="true"></i>
+            </summary>
+            <p>Delete recipes or your whole cookbook from within the app. If you use iCloud, manage the synced copy in your device’s iCloud settings.</p>
+          </details>
+        </div>
+      </section>
+
+      <p class="help-empty" data-help-empty hidden>No questions match your search. Try other words, or email me at <a href="mailto:hello.karoto@gmail.com">hello.karoto@gmail.com</a>.</p>
+
+      <section class="help-contact">
+        <h2>Still have a question?</h2>
+        <p>If you can’t find what you’re looking for, spot a bug or have an idea for Karoto, email me at <a href="mailto:hello.karoto@gmail.com">hello.karoto@gmail.com</a>. I read every message and reply myself.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand brand-large" href="index.html" aria-label="Karoto home">
+          <img src="assets/karoto-icon.png" alt="" width="44" height="44">
+          <span>Karoto</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html#download">Download</a>
+          <a href="index.html#features">Features</a>
+          <a href="help.html" aria-current="page">Help Center</a>
+          <a href="mailto:hello.karoto@gmail.com">Contact</a>
+        </nav>
+      </div>
+      <div class="separator"></div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Karoto App. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Legal">
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/help.js"></script>
+</body>
+</html>
