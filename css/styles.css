@@ -439,11 +439,13 @@ a { color: inherit; text-decoration: none; }
 
 .devices-section { gap: 72px; }
 
+/* The Mac's bezel reaches 9.25% of the group's width past its left edge, so
+   on narrow screens the group shrinks and moves right to keep it in. */
 .devices {
   position: relative;
-  width: min(875px, 100%);
+  width: min(875px, 91.53%);
   aspect-ratio: 875 / 447.856;
-  margin-inline: auto;
+  margin-left: max(calc((100% - 875px) / 2), 8.47%);
 }
 .devices > div { position: absolute; }
 
